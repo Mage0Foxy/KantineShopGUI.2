@@ -27,7 +27,7 @@ namespace KantineShopGUI._2
             if(AdminUser.Text == "Admin" && AdminPassword.Text == "Admin")
             {
                 this.Hide();
-                var form1 = new Form1();
+                var form1 = new AdminInterface();
                 form1.Closed += (s, args) => this.Close();
                 form1.Show();
             }
@@ -42,7 +42,7 @@ namespace KantineShopGUI._2
             if(Username.Text =="User" && Password.Text == "Test1234?")
             {
                 this.Hide();
-                var form3 = new Form3();
+                var form3 = new UserInterface();
                 form3.Closed += (s, args) => this.Close();
                 form3.Show();
             }

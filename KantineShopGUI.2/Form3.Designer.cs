@@ -1,6 +1,6 @@
 ﻿namespace KantineShopGUI._2
 {
-    partial class Form3
+    partial class UserInterface
     {
         /// <summary>
         /// Required designer variable.
@@ -52,15 +52,15 @@
             this.Nederlands.UseVisualStyleBackColor = true;
             this.Nederlands.Click += new System.EventHandler(this.Nederlands_Click);
             // 
-            // Form3
+            // UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(691, 389);
             this.Controls.Add(this.Nederlands);
             this.Controls.Add(this.English);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Name = "UserInterface";
+            this.Text = "UserInterface";
             this.ResumeLayout(false);
 
         }

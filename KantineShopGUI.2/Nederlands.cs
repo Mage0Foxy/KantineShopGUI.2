@@ -37,7 +37,7 @@ namespace KantineShopGUI._2
         private void btnAdd_Click(object sender, EventArgs e)
         {
             //get the selceted item from inventory
-            Kantine selected = (Kantine)listBox1.SelectedItem;
+            KantineMenu selected = (KantineMenu)listBox1.SelectedItem;
             //add the item to the cart
             myStore.ShoppingList.Add(selected);
             //update listbox

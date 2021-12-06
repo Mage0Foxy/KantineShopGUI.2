@@ -1,6 +1,6 @@
 ﻿namespace KantineShopGUI._2
 {
-    partial class Form1
+    partial class AdminInterface
     {
         /// <summary>
         ///  Required designer variable.
@@ -185,8 +185,9 @@
             this.Remove.TabIndex = 18;
             this.Remove.Text = "Remove";
             this.Remove.UseVisualStyleBackColor = true;
+            this.Remove.Click += new System.EventHandler(this.Remove_Click);
             // 
-            // Form1
+            // AdminInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -196,8 +197,8 @@
             this.Controls.Add(this.Langauge);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Create);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "AdminInterface";
+            this.Text = "AdminInterface";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Create.ResumeLayout(false);
             this.Create.PerformLayout();

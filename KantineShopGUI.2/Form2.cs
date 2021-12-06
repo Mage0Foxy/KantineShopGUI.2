@@ -11,33 +11,33 @@ using System.Windows.Forms;
 
 namespace KantineShopGUI._2
 {
-    public partial class Form2 : Form
+    public partial class AdminInterfaceNL : Form
     {
         Store myStore = new Store();
-        BindingSource kantineBindingSource = new BindingSource();
+        BindingSource KantineMenuBindingSource = new BindingSource();
         BindingSource cartBindingSource = new BindingSource();
-        public Form2()
+        public AdminInterfaceNL()
         {
             InitializeComponent();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            kantineBindingSource.DataSource = myStore.FoodList;
+            KantineMenuBindingSource.DataSource = myStore.FoodList;
 
             cartBindingSource.DataSource = myStore.ShoppingList;
 
-            listBox1.DataSource = kantineBindingSource;
+            listBox1.DataSource = KantineMenuBindingSource;
             listBox1.DisplayMember = ToString();
 
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            Kantine f = new Kantine(txt_Food.Text, txt_Drinks.Text, txt_Snacks.Text, int.Parse(txt_Price.Text));
+            KantineMenu f = new KantineMenu(txt_Food.Text, txt_Drinks.Text, txt_Snacks.Text, int.Parse(txt_Price.Text));
             // MessageBox.Show(f.ToString());
             myStore.FoodList.Add(f);
-            kantineBindingSource.ResetBindings(false);
+            KantineMenuBindingSource.ResetBindings(false);
             txt_Food.Text = "";
             txt_Drinks.Text = "";
             txt_Snacks.Text = "";
@@ -48,14 +48,14 @@ namespace KantineShopGUI._2
         private void Langauge_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var form1 = new Form1();
+            var form1 = new AdminInterface();
             form1.Closed += (s, args) => this.Close();
             form1.Show();
         }
 
         private void Remove_Click(object sender, EventArgs e)
         {
-            Kantine selected = (Kantine)listBox1.SelectedItem;
+            KantineMenu selected = (KantineMenu)listBox1.SelectedItem;
             myStore.ShoppingList.Remove(selected);
         }
     }

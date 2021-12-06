@@ -1,6 +1,6 @@
 ﻿namespace KantineShopGUI._2
 {
-    partial class Form2
+    partial class AdminInterfaceNL
     {
         /// <summary>
         /// Required designer variable.
@@ -65,7 +65,7 @@
             this.groupBox2.Size = new System.Drawing.Size(295, 350);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Kantine";
+            this.groupBox2.Text = "KantineMenu";
             // 
             // listBox1
             // 
@@ -197,8 +197,8 @@
             this.Controls.Add(this.Langauge);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Create);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "AdminInterfaceNL";
+            this.Text = "AdminInterfaceNL";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox2.ResumeLayout(false);
             this.Create.ResumeLayout(false);

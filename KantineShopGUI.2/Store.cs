@@ -8,14 +8,14 @@ namespace KantineClassLibrary
 {
     public class Store
     {
-        public List<Kantine> FoodList;
-        public List<Kantine> ShoppingList;
+        public List<KantineMenu> FoodList;
+        public List<KantineMenu> ShoppingList;
        
 
         public Store()
         {
-            FoodList = new List<Kantine>();
-            ShoppingList = new List<Kantine>();
+            FoodList = new List<KantineMenu>();
+            ShoppingList = new List<KantineMenu>();
         }
 
         public double Checkout()

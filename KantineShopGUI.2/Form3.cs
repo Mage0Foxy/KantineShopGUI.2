@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace KantineShopGUI._2
 {
-    public partial class Form3 : Form
+    public partial class UserInterface : Form
     {
         English u1;
         Nederlands u2;
-        public Form3()
+        public UserInterface()
         {
             u1 = new English();
             u2 = new Nederlands();

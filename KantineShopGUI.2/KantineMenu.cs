@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KantineClassLibrary
 {
-    public class Kantine
+    public class KantineMenu
     {
         public string Foods { get; set; }
         public string Drinks { get; set; }
@@ -18,7 +18,7 @@ namespace KantineClassLibrary
             return Foods + Drinks + Snacks + " " + "€" + Price;
         }
 
-        public Kantine(string a, string b, string c, double d)
+        public KantineMenu(string a, string b, string c, double d)
         {
             Foods = a;
             Drinks = b;
