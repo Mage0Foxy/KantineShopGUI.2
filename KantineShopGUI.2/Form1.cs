@@ -47,7 +47,17 @@ namespace KantineShopGUI._2
 
         private void Remove_Click(object sender, EventArgs e)
         {
+            //Meant to remove a selected Item from the listbox1 or known as KantineMenu.
+            ListBox.SelectedObjectCollection selectedItems = new ListBox.SelectedObjectCollection(listBox1);
+            selectedItems = listBox1.SelectedItems;
 
+            if (listBox1.SelectedIndex != -1)
+            {
+                for (int i = selectedItems.Count - 1; i >= 0; i--)
+                    listBox1.Items.Remove(selectedItems[i]);
+            }
+            else
+                MessageBox.Show("Something has gone wrong");
         }
     }
 }
